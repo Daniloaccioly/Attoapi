@@ -23,7 +23,8 @@ module.exports = {
     res.header("Access-Control-Allow-Origin", "http://localhost:3000");
     res.header("Access-Control-Allow-Methods", 'GET,POST');
     res.header("Content-Type",'application/json');
+    res.send(JSON.stringify(senha));
     
-    return res.json(senha);
+    return res;
   }
 };
