@@ -21,8 +21,8 @@ module.exports = {
     const senha = await Senha.create({ count, last });
 
     res.header("Access-Control-Allow-Origin", "http://localhost:3000");
-    res.header("Access-Control-Allow-Methods", 'GET,POST');
-    res.header("Content-Type",'application/json');
+    res.header("Access-Control-Allow-Methods", 'GET,POST,OPTIONS');
+    
     res.send(JSON.stringify(senha));
     
     return res;
