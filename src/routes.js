@@ -7,8 +7,8 @@ const SenhaController = require('./controllers/SenhaController');
 const routes = express.Router();
 
 var corsOptions = {
-    origin: 'http://localhost:3000',
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+    origin: 'http://10.1.1.116:3000',
+    optionsSuccessStatus: 200
   }
 
 routes.get('/users', UserController.index);
